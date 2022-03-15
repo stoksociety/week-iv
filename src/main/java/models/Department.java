@@ -7,7 +7,7 @@ public class Department {
     private String departDesc;
     private int employeeNo;
 
-    public Department(int id, String departName, String departDesc, int employeeNo) {
+    public Department(String id, String departName, String departDesc, String employeeNo) {
         this.id = id;
         this.departName = departName;
         this.departDesc = departDesc;
