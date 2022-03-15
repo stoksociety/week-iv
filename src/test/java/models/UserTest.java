@@ -14,7 +14,7 @@ public class UserTest {
     @Test
     public  void user_InstantiateWithName_True(){
         User testUser = new User("stoksociety", "Android Developer", "Develop Mobile Apps", "IT", 2);
-        assertEquals("Trekhub", testUser.getName());
+        assertEquals("stoksociety", testUser.getName());
     }
 
     @Test
