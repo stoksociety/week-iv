@@ -7,13 +7,12 @@ import org.sql2o.Sql2oException;
 
 import java.util.List;
 
-public class Sql2oUserDao implements UserDao {
+public class sql2oUserDao implements UserDao {
 
     private final Sql2o sql2o;
-    public Sql2oUserDao(Sql2o sql2o) {
+    public sql2oUserDao(Sql2o sql2o) {
         this.sql2o = sql2o;
     }
-
     @Override
     public void add(User user) {
         String sql = "INSERT INTO users (name, position, role, department, departId) VALUES (:name, :position, :role, :department, :departId)";
@@ -28,7 +27,6 @@ public class Sql2oUserDao implements UserDao {
             throw  error;
         }
     }
-
     @Override
     public List<User> getAllUsers() {
         String sql = "SELECT * FROM users";
@@ -39,7 +37,6 @@ public class Sql2oUserDao implements UserDao {
             throw  error;
         }
     }
-
     @Override
     public User findById(int id) {
         String sql = "SELECT * FROM users WHERE id = :id";
@@ -50,7 +47,6 @@ public class Sql2oUserDao implements UserDao {
         }catch (Sql2oException error){
             throw  error;
         }
-
     }
     @Override
     public List<User> findUsersByDepart(int departId) {
@@ -64,7 +60,5 @@ public class Sql2oUserDao implements UserDao {
         }
 
     }
-
-
 }
 
