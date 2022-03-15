@@ -38,4 +38,13 @@ public class Department {
     public void setEmployeeNo(String employeeNo) {
         this.employeeNo = employeeNo;
     }
+
+    public void setId(int id) {
+
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
