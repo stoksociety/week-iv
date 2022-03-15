@@ -5,22 +5,15 @@ public class Department {
     private int id;
     private String departName;
     private String departDesc;
-    private int employeeNo;
+    private String employeeNo;
 
     public Department(String id, String departName, String departDesc, String employeeNo) {
-        this.id = id;
+
         this.departName = departName;
         this.departDesc = departDesc;
         this.employeeNo = employeeNo;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getDepartName() {
         return departName;
@@ -38,11 +31,11 @@ public class Department {
         this.departDesc = departDesc;
     }
 
-    public int getEmployeeNo() {
+    public String getEmployeeNo() {
         return employeeNo;
     }
 
-    public void setEmployeeNo(int employeeNo) {
+    public void setEmployeeNo(String employeeNo) {
         this.employeeNo = employeeNo;
     }
 }
