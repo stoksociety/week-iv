@@ -6,7 +6,7 @@ public class News {
     private String content;
     private int departId;
 
-    public News(int id, String title, String content, int departId) {
+    public News(String title, String content, int departId) {
         this.id = id;
         this.title = title;
         this.content = content;
